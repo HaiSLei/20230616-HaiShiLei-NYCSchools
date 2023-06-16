@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NYC High School</string>
+    <string name="overview">Overview</string>
+    <string name="average_sat_math">Average SAT Math:</string>
+    <string name="average_sat_reading">Average SAT Reading:</string>
+    <string name="average_sat_writing">Average SAT writing:</string>
+    <string name="refresh">refresh</string>
+</resources>

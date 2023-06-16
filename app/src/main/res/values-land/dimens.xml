@@ -1,0 +1,12 @@
+<resources>
+    <!-- Margin -->
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_large">30dp</dimen>
+
+    <!-- Corner Radius -->
+    <dimen name="corner_radius_standard">10dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_size_high_School_Title">20sp</dimen>
+    <dimen name="text_size_card_view_field">15sp</dimen>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sat_school_name_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_high_School_Title"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="liberty High School" />
+
+        <TextView
+            android:id="@+id/sat_math_score_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/average_sat_math"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/sat_school_name_text_view"
+            app:layout_constraintTop_toBottomOf="@id/sat_school_name_text_view" />
+
+        <TextView
+            android:id="@+id/sat_math_score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/sat_math_score_title_text_view"
+            app:layout_constraintTop_toTopOf="@id/sat_math_score_title_text_view"
+            tools:text="600" />
+
+        <TextView
+            android:id="@+id/sat_reading_score_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/average_sat_reading"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/sat_math_score_title_text_view"
+            app:layout_constraintTop_toBottomOf="@id/sat_math_score_title_text_view" />
+
+        <TextView
+            android:id="@+id/sat_reading_score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/sat_reading_score_title_text_view"
+            app:layout_constraintTop_toTopOf="@id/sat_reading_score_title_text_view"
+            tools:text="660" />
+
+        <TextView
+            android:id="@+id/sat_writing_score_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/average_sat_writing"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/sat_reading_score_title_text_view"
+            app:layout_constraintTop_toBottomOf="@id/sat_reading_score_title_text_view" />
+
+        <TextView
+            android:id="@+id/sat_writing_score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/sat_writing_score_title_text_view"
+            app:layout_constraintTop_toTopOf="@id/sat_writing_score_title_text_view"
+            tools:text="660" />
+
+        <View
+            android:id="@+id/settings_divider_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:alpha="0.2"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sat_writing_score_text_view" />
+
+        <TextView
+            android:id="@+id/sat_overview_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/overview"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/sat_writing_score_title_text_view"
+            app:layout_constraintTop_toBottomOf="@id/settings_divider_one" />
+
+        <TextView
+            android:id="@+id/sat_overview_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/sat_writing_score_title_text_view"
+            app:layout_constraintTop_toBottomOf="@id/sat_overview_title_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="long overview description" />
+
+        <View
+            android:id="@+id/settings_divider_two"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:alpha="0.2"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sat_overview_text_view" />
+
+        <TextView
+            android:id="@+id/sat_address_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/sat_overview_text_view"
+            app:layout_constraintTop_toBottomOf="@id/settings_divider_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="567 Ave new york, new york 11223" />
+
+        <TextView
+            android:id="@+id/sat_phone_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/sat_address_text_view"
+            app:layout_constraintTop_toBottomOf="@id/sat_address_text_view"
+            tools:text="718-564-4532" />
+
+        <TextView
+            android:id="@+id/sat_email_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/sat_phone_text_view"
+            app:layout_constraintTop_toBottomOf="@id/sat_phone_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="abc@gmail.com" />
+
+        <TextView
+            android:id="@+id/sat_website_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/sat_email_text_view"
+            app:layout_constraintTop_toBottomOf="@id/sat_email_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="www.abc.com" />
+
+        <View
+            android:id="@+id/settings_divider_three"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:alpha="0.2"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sat_website_text_view" />
+
+        <Button
+            android:id="@+id/sat_retry_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
